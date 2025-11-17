@@ -1,0 +1,10 @@
+{
+  "codeConnect": {
+    "include": ["src/components/**/*.tsx"],
+    "exclude": ["**/*.test.tsx", "**/*.stories.tsx"]
+  },
+  "documentUrlSubstitutions": {
+    "https://www.figma.com/design/zNtzZomzpbSsc3vhLp00z0/shadcn-ui": "shadcn-ui"
+  }
+}
+
