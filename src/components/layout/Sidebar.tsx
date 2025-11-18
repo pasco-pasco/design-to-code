@@ -49,7 +49,7 @@ export function Sidebar() {
 
           {/* Components Section */}
           <div className="pt-6">
-            <h2 className="mb-2 px-3 text-xs font-semibold tracking-tight text-foreground">
+            <h2 className="mb-2 px-3 text-xs font-semibold tracking-tight text-muted-foreground">
               Components
             </h2>
             <div className="space-y-0.5">
@@ -61,7 +61,7 @@ export function Sidebar() {
                     'block rounded-md px-3 py-1.5 text-sm transition-colors',
                     location.pathname === link.path
                       ? 'bg-muted font-medium text-foreground'
-                      : 'text-muted-foreground hover:bg-muted/50 hover:text-foreground'
+                      : 'text-foreground/80 hover:bg-muted/50 hover:text-foreground'
                   )}
                 >
                   {link.name}
