@@ -3,10 +3,10 @@ import { Button } from '@/components/ui/button'
 
 export function CardPage() {
   return (
-    <div className="space-y-8">
-      <div>
-        <h1 className="text-4xl font-bold tracking-tight">Card</h1>
-        <p className="mt-2 text-lg text-muted-foreground">
+    <div className="space-y-10">
+      <div className="space-y-2">
+        <h1 className="scroll-m-20 text-4xl font-bold tracking-tight">Card</h1>
+        <p className="text-base text-muted-foreground">
           Displays a card with header, content, and footer.
         </p>
       </div>

@@ -4,10 +4,10 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 
 export function InputPage() {
   return (
-    <div className="space-y-8">
-      <div>
-        <h1 className="text-4xl font-bold tracking-tight">Input</h1>
-        <p className="mt-2 text-lg text-muted-foreground">
+    <div className="space-y-10">
+      <div className="space-y-2">
+        <h1 className="scroll-m-20 text-4xl font-bold tracking-tight">Input</h1>
+        <p className="text-base text-muted-foreground">
           Displays a form input field or a component that looks like an input field.
         </p>
       </div>

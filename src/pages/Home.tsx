@@ -17,12 +17,12 @@ const installedComponents = [
 
 export function Home() {
   return (
-    <div className="space-y-8">
+    <div className="space-y-10">
       {/* Header */}
-      <div>
-        <h1 className="text-4xl font-bold tracking-tight">shadcn/ui Components</h1>
-        <p className="mt-2 text-lg text-muted-foreground">
-          A collection of beautifully designed, accessible components built with React and Tailwind CSS.
+      <div className="space-y-2">
+        <h1 className="scroll-m-20 text-4xl font-bold tracking-tight">Components</h1>
+        <p className="text-base text-muted-foreground">
+          Beautifully designed components built with Radix UI and Tailwind CSS.
         </p>
       </div>
 

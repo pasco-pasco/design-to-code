@@ -3,10 +3,10 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 
 export function ButtonPage() {
   return (
-    <div className="space-y-8">
-      <div>
-        <h1 className="text-4xl font-bold tracking-tight">Button</h1>
-        <p className="mt-2 text-lg text-muted-foreground">
+    <div className="space-y-10">
+      <div className="space-y-2">
+        <h1 className="scroll-m-20 text-4xl font-bold tracking-tight">Button</h1>
+        <p className="text-base text-muted-foreground">
           Displays a button or a component that looks like a button.
         </p>
       </div>

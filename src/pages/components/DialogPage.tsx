@@ -6,10 +6,10 @@ import { Label } from '@/components/ui/label'
 
 export function DialogPage() {
   return (
-    <div className="space-y-8">
-      <div>
-        <h1 className="text-4xl font-bold tracking-tight">Dialog</h1>
-        <p className="mt-2 text-lg text-muted-foreground">
+    <div className="space-y-10">
+      <div className="space-y-2">
+        <h1 className="scroll-m-20 text-4xl font-bold tracking-tight">Dialog</h1>
+        <p className="text-base text-muted-foreground">
           A window overlaid on either the primary window or another dialog window, rendering the content underneath inert.
         </p>
       </div>

@@ -4,10 +4,10 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 
 export function SwitchPage() {
   return (
-    <div className="space-y-8">
-      <div>
-        <h1 className="text-4xl font-bold tracking-tight">Switch</h1>
-        <p className="mt-2 text-lg text-muted-foreground">
+    <div className="space-y-10">
+      <div className="space-y-2">
+        <h1 className="scroll-m-20 text-4xl font-bold tracking-tight">Switch</h1>
+        <p className="text-base text-muted-foreground">
           A control that allows the user to toggle between checked and not checked.
         </p>
       </div>
