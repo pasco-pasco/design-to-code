@@ -112,7 +112,7 @@ export function Home() {
             <div>
               <h3 className="font-semibold mb-2">Components</h3>
               <ul className="space-y-1 text-sm text-muted-foreground">
-                <li>• shadcn/ui component library</li>
+                <li>• logic/ui component library</li>
                 <li>• Radix UI primitives</li>
                 <li>• Accessible by default</li>
               </ul>

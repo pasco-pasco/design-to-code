@@ -27,7 +27,7 @@ export function Sidebar() {
         {/* Header */}
         <Link to="/" className="mb-6 px-3">
           <h1 className="text-lg font-semibold tracking-tight">
-            shadcn/ui
+            logic/ui
           </h1>
           <p className="text-xs text-muted-foreground mt-0.5">Component Library</p>
         </Link>
