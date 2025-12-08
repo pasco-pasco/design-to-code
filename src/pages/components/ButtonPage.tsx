@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button'
+import { ButtonField } from '@/components/ui/button-field'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 
 export function ButtonPage() {
@@ -10,6 +11,96 @@ export function ButtonPage() {
           Displays a button or a component that looks like a button.
         </p>
       </div>
+
+      {/* ButtonField - Matches Figma Component */}
+      <Card>
+        <CardHeader>
+          <CardTitle>ButtonField (Figma Component)</CardTitle>
+          <CardDescription>Enhanced button with icons and loading states - matches Figma design</CardDescription>
+        </CardHeader>
+        <CardContent className="space-y-6">
+          {/* Basic Usage */}
+          <div className="space-y-4">
+            <h4 className="text-sm font-medium text-muted-foreground">Basic Usage</h4>
+            <div className="flex flex-wrap gap-4">
+              <ButtonField label="Click me" />
+              <ButtonField label="Secondary" variant="secondary" />
+              <ButtonField label="Outline" variant="outline" />
+              <ButtonField label="Destructive" variant="destructive" />
+            </div>
+          </div>
+
+          {/* With Icons */}
+          <div className="space-y-4">
+            <h4 className="text-sm font-medium text-muted-foreground">With Icons</h4>
+            <div className="flex flex-wrap gap-4">
+              <ButtonField 
+                label="Leading Icon" 
+                leadingIcon={<span>📧</span>}
+              />
+              <ButtonField 
+                label="Trailing Icon" 
+                trailingIcon={<span>→</span>}
+              />
+              <ButtonField 
+                label="Both Icons" 
+                leadingIcon={<span>💾</span>}
+                trailingIcon={<span>✓</span>}
+                variant="secondary"
+              />
+            </div>
+          </div>
+
+          {/* Loading States */}
+          <div className="space-y-4">
+            <h4 className="text-sm font-medium text-muted-foreground">Loading States</h4>
+            <div className="flex flex-wrap gap-4">
+              <ButtonField label="Loading" loading />
+              <ButtonField label="Saving..." loading variant="secondary" />
+              <ButtonField label="Processing" loading variant="outline" />
+            </div>
+          </div>
+
+          {/* Sizes */}
+          <div className="space-y-4">
+            <h4 className="text-sm font-medium text-muted-foreground">Sizes</h4>
+            <div className="flex flex-wrap gap-4 items-center">
+              <ButtonField label="Small" size="sm" leadingIcon={<span>⚡</span>} />
+              <ButtonField label="Default" leadingIcon={<span>⚡</span>} />
+              <ButtonField label="Large" size="lg" leadingIcon={<span>⚡</span>} />
+            </div>
+          </div>
+
+          {/* Full Width */}
+          <div className="space-y-4">
+            <h4 className="text-sm font-medium text-muted-foreground">Full Width</h4>
+            <ButtonField 
+              label="Full Width Button" 
+              fullWidth
+              trailingIcon={<span>→</span>}
+            />
+            <ButtonField 
+              label="Full Width Secondary" 
+              fullWidth
+              variant="secondary"
+              leadingIcon={<span>🔍</span>}
+            />
+          </div>
+
+          {/* Disabled States */}
+          <div className="space-y-4">
+            <h4 className="text-sm font-medium text-muted-foreground">Disabled States</h4>
+            <div className="flex flex-wrap gap-4">
+              <ButtonField label="Disabled" disabled />
+              <ButtonField 
+                label="Disabled with Icon" 
+                disabled 
+                leadingIcon={<span>🔒</span>}
+              />
+            </div>
+          </div>
+        </CardContent>
+      </Card>
 
       {/* Default Variant */}
       <Card>
