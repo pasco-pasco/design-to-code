@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button'
 import { ButtonField } from '@/components/ui/button-field'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { Circle, Mail, ArrowRight, Save, Check, Zap, Search, Lock } from 'lucide-react'
 
 export function ButtonPage() {
   return (
@@ -36,16 +37,16 @@ export function ButtonPage() {
             <div className="flex flex-wrap gap-4">
               <ButtonField 
                 label="Leading Icon" 
-                leadingIcon={<span>📧</span>}
+                leadingIcon={<Mail className="h-4 w-4" />}
               />
               <ButtonField 
                 label="Trailing Icon" 
-                trailingIcon={<span>→</span>}
+                trailingIcon={<ArrowRight className="h-4 w-4" />}
               />
               <ButtonField 
                 label="Both Icons" 
-                leadingIcon={<span>💾</span>}
-                trailingIcon={<span>✓</span>}
+                leadingIcon={<Save className="h-4 w-4" />}
+                trailingIcon={<Check className="h-4 w-4" />}
                 variant="secondary"
               />
             </div>
@@ -65,9 +66,9 @@ export function ButtonPage() {
           <div className="space-y-4">
             <h4 className="text-sm font-medium text-muted-foreground">Sizes</h4>
             <div className="flex flex-wrap gap-4 items-center">
-              <ButtonField label="Small" size="sm" leadingIcon={<span>⚡</span>} />
-              <ButtonField label="Default" leadingIcon={<span>⚡</span>} />
-              <ButtonField label="Large" size="lg" leadingIcon={<span>⚡</span>} />
+              <ButtonField label="Small" size="sm" leadingIcon={<Zap className="h-4 w-4" />} />
+              <ButtonField label="Default" leadingIcon={<Zap className="h-4 w-4" />} />
+              <ButtonField label="Large" size="lg" leadingIcon={<Zap className="h-4 w-4" />} />
             </div>
           </div>
 
@@ -77,13 +78,13 @@ export function ButtonPage() {
             <ButtonField 
               label="Full Width Button" 
               fullWidth
-              trailingIcon={<span>→</span>}
+              trailingIcon={<ArrowRight className="h-4 w-4" />}
             />
             <ButtonField 
               label="Full Width Secondary" 
               fullWidth
               variant="secondary"
-              leadingIcon={<span>🔍</span>}
+              leadingIcon={<Search className="h-4 w-4" />}
             />
           </div>
 
@@ -95,7 +96,7 @@ export function ButtonPage() {
               <ButtonField 
                 label="Disabled with Icon" 
                 disabled 
-                leadingIcon={<span>🔒</span>}
+                leadingIcon={<Lock className="h-4 w-4" />}
               />
             </div>
           </div>
@@ -185,13 +186,13 @@ export function ButtonPage() {
       <Card>
         <CardHeader>
           <CardTitle>Icon Buttons</CardTitle>
-          <CardDescription>Buttons with icon size</CardDescription>
+          <CardDescription>Buttons with icon size (using Circle icon from Figma)</CardDescription>
         </CardHeader>
         <CardContent className="flex flex-wrap gap-4 items-center">
-          <Button size="icon">🔍</Button>
-          <Button variant="secondary" size="icon">⚙️</Button>
-          <Button variant="outline" size="icon">📎</Button>
-          <Button variant="ghost" size="icon">❤️</Button>
+          <Button size="icon"><Circle className="h-4 w-4" /></Button>
+          <Button variant="secondary" size="icon"><Circle className="h-4 w-4" /></Button>
+          <Button variant="outline" size="icon"><Circle className="h-4 w-4" /></Button>
+          <Button variant="ghost" size="icon"><Circle className="h-4 w-4" /></Button>
         </CardContent>
       </Card>
 
