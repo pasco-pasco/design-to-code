@@ -44,6 +44,7 @@ const ButtonField = React.forwardRef<HTMLButtonElement, ButtonFieldProps>(
         disabled={disabled || loading}
         className={cn(
           fullWidth && "w-full",
+          "gap-2", // Add gap between all children (icons and text)
           className
         )}
         {...props}
@@ -71,13 +72,13 @@ const ButtonField = React.forwardRef<HTMLButtonElement, ButtonFieldProps>(
           </svg>
         )}
         {!loading && leadingIcon && (
-          <span className="inline-flex shrink-0">
+          <span className="inline-flex shrink-0 items-center">
             {leadingIcon}
           </span>
         )}
-        <span>{content}</span>
+        {content && <span>{content}</span>}
         {!loading && trailingIcon && (
-          <span className="inline-flex shrink-0">
+          <span className="inline-flex shrink-0 items-center">
             {trailingIcon}
           </span>
         )}
