@@ -1,7 +1,6 @@
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
+import { InstructionCard } from '@/components/ui/instruction-card'
 
-// This is a duplicate of CardPage.tsx but specifically for "Instruction cards"
+// This page demonstrates the InstructionCard component created from Figma design
 export function InstructionCardsPage() {
   return (
     <div className="space-y-10">
@@ -13,91 +12,21 @@ export function InstructionCardsPage() {
         </p>
       </div>
 
-      {/* Grid of Card Examples - 2 columns on medium screens and up */}
-      <div className="grid gap-6 md:grid-cols-2">
-        {/* Basic Card Example */}
-        <Card>
-          <CardHeader>
-            <CardTitle>Card Title</CardTitle>
-            <CardDescription>Card Description</CardDescription>
-          </CardHeader>
-          <CardContent>
-            <p>Card Content. This is where your main content goes.</p>
-          </CardContent>
-          <CardFooter>
-            <Button>Action</Button>
-          </CardFooter>
-        </Card>
-
-        {/* Project Setup Example */}
-        <Card>
-          <CardHeader>
-            <CardTitle>Project Setup</CardTitle>
-            <CardDescription>Deploy your new project in one-click</CardDescription>
-          </CardHeader>
-          <CardContent>
-            <p className="text-sm text-muted-foreground">
-              Your project is now ready to be deployed. Click the button below to deploy.
-            </p>
-          </CardContent>
-          <CardFooter className="flex justify-between">
-            <Button variant="outline">Cancel</Button>
-            <Button>Deploy</Button>
-          </CardFooter>
-        </Card>
-
-        {/* Notifications Example */}
-        <Card>
-          <CardHeader>
-            <CardTitle>Notifications</CardTitle>
-            <CardDescription>You have 3 unread messages</CardDescription>
-          </CardHeader>
-          <CardContent>
-            <div className="space-y-2">
-              {/* Each notification item with a dot indicator */}
-              <div className="flex items-center gap-2">
-                <div className="h-2 w-2 rounded-full bg-primary" />
-                <p className="text-sm">Your call has been confirmed.</p>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="h-2 w-2 rounded-full bg-primary" />
-                <p className="text-sm">You have a new message!</p>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="h-2 w-2 rounded-full bg-primary" />
-                <p className="text-sm">Your subscription is expiring soon!</p>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-
-        {/* Analytics Example */}
-        <Card>
-          <CardHeader>
-            <CardTitle>Analytics</CardTitle>
-            <CardDescription>View your analytics</CardDescription>
-          </CardHeader>
-          <CardContent>
-            <div className="space-y-2">
-              {/* Key-value pairs for analytics data */}
-              <div className="flex justify-between">
-                <span className="text-sm text-muted-foreground">Total Users</span>
-                <span className="font-bold">1,234</span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-sm text-muted-foreground">Active Sessions</span>
-                <span className="font-bold">456</span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-sm text-muted-foreground">Bounce Rate</span>
-                <span className="font-bold">23%</span>
-              </div>
-            </div>
-          </CardContent>
-          <CardFooter>
-            <Button variant="outline" className="w-full">View Details</Button>
-          </CardFooter>
-        </Card>
+      {/* InstructionCard Example - Converted from Figma Design */}
+      <div className="space-y-4">
+        <InstructionCard title="Wait for" defaultExpanded={true} />
+        
+        {/* 
+          Try clicking the arrow icon to collapse/expand the card!
+          
+          Features implemented:
+          ✅ Collapsible header with animated chevron
+          ✅ Status badge with bolt icon (placeholder for custom icon)
+          ✅ Two input fields for "Wait for" and "Condition"
+          ✅ Footer with "+ Add or" button
+          ✅ Matches Figma design colors (slate-50 header/footer, slate-100 content)
+          ✅ Uses your existing design tokens where possible
+        */}
       </div>
     </div>
   )
