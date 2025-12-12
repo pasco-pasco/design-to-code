@@ -13,6 +13,7 @@ const componentLinks: ComponentLink[] = [
   { name: 'Checkbox', path: '/components/checkbox' },
   { name: 'Dialog', path: '/components/dialog' },
   { name: 'Input', path: '/components/input' },
+  { name: 'Instruction cards', path: '/components/instruction-cards' },
   { name: 'Label', path: '/components/label' },
   { name: 'Skeleton', path: '/components/skeleton' },
   { name: 'Switch', path: '/components/switch' },
@@ -74,7 +75,7 @@ export function Sidebar() {
         {/* Footer */}
         <div className="mt-auto pt-4">
           <div className="px-3 text-[11px] text-muted-foreground/70 space-y-0.5">
-            <p>9 components</p>
+            <p>10 components</p>
             <p>React + Tailwind</p>
           </div>
         </div>

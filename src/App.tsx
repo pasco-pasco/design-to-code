@@ -7,6 +7,7 @@ import { CardPage } from '@/pages/components/CardPage'
 import { CheckboxPage } from '@/pages/components/CheckboxPage'
 import { DialogPage } from '@/pages/components/DialogPage'
 import { InputPage } from '@/pages/components/InputPage'
+import { InstructionCardsPage } from '@/pages/components/InstructionCardsPage'
 import { LabelPage } from '@/pages/components/LabelPage'
 import { SkeletonPage } from '@/pages/components/SkeletonPage'
 import { SwitchPage } from '@/pages/components/SwitchPage'
@@ -23,6 +24,7 @@ function App() {
           <Route path="components/checkbox" element={<CheckboxPage />} />
           <Route path="components/dialog" element={<DialogPage />} />
           <Route path="components/input" element={<InputPage />} />
+          <Route path="components/instruction-cards" element={<InstructionCardsPage />} />
           <Route path="components/label" element={<LabelPage />} />
           <Route path="components/skeleton" element={<SkeletonPage />} />
           <Route path="components/switch" element={<SwitchPage />} />
